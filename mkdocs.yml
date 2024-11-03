@@ -1,0 +1,42 @@
+site_name: Celeste 制图教程
+repo_url: https://github.com/Saplonily/CelesteMappingTutorial
+site_description: Celeste Mapping Tutorial
+site_author: Saplonily
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  logo: assets/images/favicon.png
+  font: false
+  features:
+    - content.code.copy
+    - content.tabs.link
+
+extra_css:
+  - assets/content.css
+
+markdown_extensions:
+  - admonition
+  - meta
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.highlight:
+      pygments_lang_class: true
+      linenums: true
+
+nav:
+  - 首页: "index.md"
+  - 第一章:
+    - 安装 Loenn: "chap1/install_loenn.md"
+    - Loenn 基础使用: "chap1/loenn_basic_usage.md"
